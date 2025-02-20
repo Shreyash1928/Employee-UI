@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Employee-UI/static/css/main.01b63807.css",
+    "main.js": "/Employee-UI/static/js/main.bb7f8f57.js",
+    "index.html": "/Employee-UI/index.html",
+    "main.01b63807.css.map": "/Employee-UI/static/css/main.01b63807.css.map",
+    "main.bb7f8f57.js.map": "/Employee-UI/static/js/main.bb7f8f57.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.01b63807.css",
+    "static/js/main.bb7f8f57.js"
+  ]
+}
