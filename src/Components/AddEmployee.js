@@ -85,6 +85,17 @@ const AddEmployee = ({ addEmployee }) => {
     } catch (error) {
         console.error("Error adding employee:", error);
 
+         // Reset the form after successful submission
+        //  setFirstName("");
+        //  setLastName("");
+        //  setPosition("");
+        //  setSalary("");
+        //  setDepartment("Software");
+        //  setDateOfJoining("");
+        //  setIsActive(true);
+
+
+
         // Toastify error message in case of any error
         // toast.error("Error adding employee. Please try again.", {
         //   position: "top-right",
