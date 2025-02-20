@@ -1,0 +1,224 @@
+/* Employee Table Wrapper */
+.employee-table-wrapper {
+    max-width: 400px; /* Limit the table width to match the form */
+    width: 100%;
+    margin: 20px auto;
+}
+
+/* Employee Table */
+.employee-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: auto;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Table cells */
+.employee-table th, .employee-table td {
+    padding: 10px 16px; /* Reduced padding for a more compact look */
+    text-align: left;
+    border: 1px solid #ddd;
+    word-wrap: break-word;
+    font-size: 0.9rem; /* Adjusted font size */
+}
+
+/* Employee Table Header */
+.employee-table th {
+    background-color: #f9f9f9; /* Light gray */
+    font-size: 1.1em; /* Slightly smaller header font */
+    font-weight: 600;
+    color: #2980b9; /* Blue */
+    text-transform: uppercase;
+}
+
+/* Employee Table Content */
+.employee-table td {
+    font-size: 0.9rem; /* Adjusted font size */
+    color: #666;
+}
+
+/* Buttons Styling */
+.employee-table .view-button,
+.employee-table .delete-button,
+.employee-table .edit-button {
+    padding: 6px 12px; /* Reduced padding for compact buttons */
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    margin-right: 8px;
+    font-size: 0.8rem; /* Slightly smaller font size */
+    font-weight: 500;
+}
+
+.employee-table .view-button {
+    background-color: #2980b9; /* Blue */
+    color: white;
+}
+
+.employee-table .view-button:hover {
+    background-color: #3498db; /* Lighter blue on hover */
+}
+
+.employee-table .delete-button {
+    background-color: #f44336; /* Red */
+    color: white;
+}
+
+.employee-table .delete-button:hover {
+    background-color: #e53935; /* Darker red */
+}
+
+.employee-table .edit-button {
+    background-color: #FFA500; /* Orange */
+    color: white;
+}
+
+.employee-table .edit-button:hover {
+    background-color: #ff8c00; /* Darker orange */
+}
+
+/* Employee Details Row */
+.employee-details-row {
+    background-color: #fafafa;
+    border-top: 2px solid #ddd;
+}
+
+.employee-details {
+    padding: 15px;
+    font-size: 0.9rem; /* Adjusted font size for smaller view */
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.employee-details p {
+    margin: 8px 0;
+}
+
+/* Improved Loading Spinner */
+.loading {
+    text-align: center;
+    font-size: 1.1em;
+    color: #333;
+    padding: 20px;
+}
+
+.error {
+    text-align: center;
+    color: #f44336; /* Red */
+    font-size: 1.1em;
+    padding: 20px;
+}
+
+.retry-button {
+    padding: 6px 12px;
+    background-color: #2980b9; /* Blue */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+.retry-button:hover {
+    background-color: #3498db; /* Lighter blue */
+}
+
+/* Pagination Controls */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.pagination-button {
+    padding: 8px 12px;
+    background-color: #2980b9; /* Blue */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem; /* Adjusted font size */
+    transition: background-color 0.3s ease;
+}
+
+.pagination-button:hover {
+    background-color: #3498db; /* Lighter blue */
+}
+
+.pagination-button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+}
+
+.pagination-button.active {
+    background-color: #3498db; /* Lighter blue for active */
+    font-weight: bold;
+}
+
+/* Update form styling */
+.employee-details form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.employee-details input, .employee-details select {
+    padding: 8px;
+    font-size: 1rem;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.employee-details button {
+    padding: 10px 16px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.update-button {
+    background-color: #2980b9; /* Blue */
+    color: white;
+}
+
+.update-button:hover {
+    background-color: #3498db; /* Lighter blue */
+}
+
+.cancel-button {
+    background-color: #f44336; /* Red */
+    color: white;
+}
+
+.cancel-button:hover {
+    background-color: #e53935; /* Darker red */
+}
+
+/* Responsive Table */
+@media screen and (max-width: 768px) {
+    .employee-table-wrapper {
+        padding: 10px; /* Reduced padding for mobile */
+    }
+    
+    .employee-table th, .employee-table td {
+        padding: 8px 12px; /* Adjusted padding */
+        font-size: 0.8rem; /* Smaller text on mobile */
+    }
+
+    .employee-details p {
+        font-size: 0.9rem;
+    }
+
+    .pagination-button {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
+}

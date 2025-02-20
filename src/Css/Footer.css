@@ -1,0 +1,45 @@
+/* Footer.css */
+
+/* Ensure the body and html fill the entire viewport */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Make the wrapper take full height and use flexbox to structure the layout */
+  .app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full height of the viewport */
+  }
+  
+  /* Main content container */
+  .main-content {
+    flex: 1; /* This ensures the content area takes available space */
+    padding: 20px;
+    background-color: #f4f6f9;
+  }
+  
+  /* Styling for the footer */
+  .footer {
+    background-color: #2c3e50; /* Dark background for a professional look */
+    color: #ecf0f1; /* Light text color for contrast */
+    padding: 20px 0; /* Padding for top and bottom */
+    text-align: center; /* Center the text */
+    font-size: 16px; /* Reasonable font size for footer text */
+    border-top: 2px solid #2980b9; /* Subtle border for separation */
+  }
+  
+  .footer p {
+    margin: 0; /* Remove default margin */
+  }
+  
+  /* Responsive design for mobile */
+  @media (max-width: 768px) {
+    .footer {
+      font-size: 14px; /* Smaller font size on mobile */
+      padding: 15px 0; /* Slightly smaller padding */
+    }
+  }
+  
